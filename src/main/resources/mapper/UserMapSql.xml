@@ -11,7 +11,7 @@
     <select id = "findUserById" resultMap = "result">
         SELECT * FROM traveldb.tab_userinfo where UserID = #{userID};
     </select>
-    <update id="updateTempAlbumID" parameterType="java.lang.Integer" >
-
+    <update id="updateTempAlbumID" >
+        update traveldb.tmp2 set AlbumID = #{albumID} where UserID=#{userID} and AlbumID =1
     </update>
 </mapper>

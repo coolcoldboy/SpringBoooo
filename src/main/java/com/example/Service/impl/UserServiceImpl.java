@@ -20,4 +20,11 @@ public class UserServiceImpl implements UserService {
 
         return userMapper.findUserById(id);
     }
+
+    @Override
+    public int updateTempAlbumID(Long id) {
+        int ret = userMapper.updateTempAlbumID(id,2);
+//        sqlSession.commit();
+        return ret;
+    }
 }

@@ -3,5 +3,6 @@ package com.example.Service;
 import com.example.model.User;
 
 public interface UserService {
-    public User findUserById(Long id);
+    User findUserById(Long id);
+    int updateTempAlbumID(Long id);
 }
