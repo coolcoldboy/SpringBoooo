@@ -17,7 +17,7 @@ public class UserController {
     @RequestMapping("/api/user")
     public User queryUserById(Long id) {
         return userService.findUserById(id);
-    }
+}
 
 
     @RequestMapping(value = "/api/updatealbumID", method = {RequestMethod.GET, RequestMethod.POST})
